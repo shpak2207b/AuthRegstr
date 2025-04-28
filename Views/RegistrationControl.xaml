@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="AuthRegstr.Views.RegistrationControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AuthRegstr.Views"
+             mc:Ignorable="d" Background="White"
+             d:DesignHeight="450" d:DesignWidth="450">
+    <StackPanel>
+        <TextBlock
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Margin="10"
+            Text="Для доступа необходимо авторизоваться"/>
+        <TextBlock Margin="5" Width="100" Text="Табельный номер" />
+        <TextBox Name="usernameBox" Width="100" Margin="5"/>
+        <TextBlock Margin="5" Width="100" Text="Пароль" />
+        <PasswordBox Name="passwordBox" Width="100" Margin="5"/>
+        <Button Click="OnRegistrstionClick" Content="Войти" Width="75" Margin="15"/>
+        <Button Click="OnLoginNavigationClick"
+            HorizontalAlignment="Right" Margin="15"
+            Width="100" Content="Есть аккаунт? Войти"
+            Background="Transparent" BorderBrush="Transparent"
+            Foreground="Blue"/>
+    </StackPanel>
+</UserControl>
